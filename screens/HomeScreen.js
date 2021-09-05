@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, View, Dimensions, ScrollView } from "react-native";
+import {
+  Text,
+  Button,
+  View,
+  Dimensions,
+  ScrollView,
+  Touchable,
+  TouchableOpacity,
+} from "react-native";
 import Carosuel from "/Users/gauravtaparia/Desktop/Laundry/navigation/carosuel.js";
 
 import Tabs from "../navigation/tabs";
@@ -17,7 +25,8 @@ function HomeScreen({ navigation }) {
 
       {/* Place your order button */}
       <View style={{ backgroundColor: "#fff" }}>
-        <View
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Order")}
           style={{
             width: width * 0.5,
             borderRadius: 20,
@@ -27,12 +36,17 @@ function HomeScreen({ navigation }) {
             alignItems: "center",
           }}
         >
-          <Button
-            title="Book Your Pickup Now"
-            color="#fff"
-            onPress={() => navigation.navigate("Order")}
-          />
-        </View>
+          <Text
+            style={{
+              fontSize: 18,
+              fontWeight: "bold",
+              color: "white",
+              padding: 10,
+            }}
+          >
+            Book Your Pickup Now
+          </Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
