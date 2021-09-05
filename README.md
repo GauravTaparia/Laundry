@@ -1,2 +1,0 @@
-# Laundry
-BE Project Git 
