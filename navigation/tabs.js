@@ -180,7 +180,32 @@ const Tabs = () => {
         name="Profile"
         component={ProfileScreen}
         options={{
-          headerRight: () => <Button title="Login" color="fff" />,
+          headerRight: () => (
+            <TouchableOpacity
+              style={{
+                borderRadius: 15,
+                height: 30,
+                width: 70,
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "#e32f45",
+                marginRight: 15,
+              }}
+            >
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  color: "white",
+                  fontSize: 15,
+                  marginLeft: 10,
+                  marginRight: 10,
+                  textTransform: "uppercase",
+                }}
+              >
+                Login
+              </Text>
+            </TouchableOpacity>
+          ),
           tabBarIcon: ({ focused }) => (
             <View
               style={{
