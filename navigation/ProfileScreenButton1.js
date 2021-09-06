@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   View,
   Text,
@@ -7,10 +7,10 @@ import {
   Button,
   TouchableOpacity,
   Dimensions,
-} from 'react-native'
+} from "react-native";
 
-const { width } = Dimensions.get('window')
-const height = width * 0.58
+const { width } = Dimensions.get("window");
+const height = width * 0.58;
 export default function ProfileScreenButton1() {
   return (
     <View
@@ -20,14 +20,14 @@ export default function ProfileScreenButton1() {
         paddingTop: 10,
         paddingRight: 10,
         marginTop: 10,
-        backgroundColor: 'white',
+        backgroundColor: "white",
 
-        flexDirection: 'row',
+        flexDirection: "row",
       }}
     >
       <View
         style={{
-          backgroundColor: '#C4C4C4',
+          backgroundColor: "#C4C4C4",
           width: width * 0.3,
           paddingRight: 10,
           paddingTop: 10,
@@ -38,27 +38,27 @@ export default function ProfileScreenButton1() {
         }}
       >
         <Image
-          resizeMode='contain'
-          source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/delivery-man.png')}
+          resizeMode="contain"
+          source={require("/Users/gauravtaparia/Desktop/Laundry/assets/delivery-man.png")}
           style={{ width: width * 0.3, height: height * 0.2 }}
         />
       </View>
       <View
         style={{
-          backgroundColor: '#2E2B36',
+          backgroundColor: "#2E2B36",
           width: width * 0.5,
           height: height * 0.3,
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Text
           style={{
-            textAlign: 'center',
-            color: 'white',
+            textAlign: "center",
+            color: "white",
             fontSize: width * 0.05,
-            fontWeight: '700',
+            fontWeight: "700",
             padding: 10,
           }}
         >
@@ -67,18 +67,18 @@ export default function ProfileScreenButton1() {
       </View>
       <TouchableOpacity
         style={{
-          backgroundColor: '#2E2B36',
+          backgroundColor: "#2E2B36",
           width: width * 0.2,
           height: height * 0.3,
           borderBottomRightRadius: 60,
           borderTopRightRadius: 60,
-          alignItems: 'center',
-          justifyContent: 'center',
+          alignItems: "center",
+          justifyContent: "center",
           marginRight: 10,
         }}
       >
         <Image
-          source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/right-arrow.png')}
+          source={require("/Users/gauravtaparia/Desktop/Laundry/assets/right-arrow.png")}
           style={{
             width: width * 0.1,
             height: height * 0.15,
@@ -86,5 +86,5 @@ export default function ProfileScreenButton1() {
         ></Image>
       </TouchableOpacity>
     </View>
-  )
+  );
 }

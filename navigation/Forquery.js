@@ -77,7 +77,7 @@ function Forquery() {
             style={{
               textAlign: "left",
               color: "white",
-              fontSize: 20,
+              fontSize: width * 0.05,
               fontWeight: "700",
               padding: 10,
             }}
@@ -147,7 +147,7 @@ function Forquery() {
             style={{
               textAlign: "left",
               color: "white",
-              fontSize: 20,
+              fontSize: width * 0.05,
               fontWeight: "700",
               padding: 10,
             }}

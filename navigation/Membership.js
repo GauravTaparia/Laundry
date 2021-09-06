@@ -49,7 +49,7 @@ function Referral() {
         <Text
           style={{
             fontWeight: "700",
-            fontSize: 26,
+            fontSize: width * 0.06,
             color: "white",
             margin: 10,
           }}
@@ -59,7 +59,7 @@ function Referral() {
         <Text
           style={{
             fontWeight: "700",
-            fontSize: 13,
+            fontSize: width * 0.026,
             color: "#bdb8b8",
             justifyContent: "center",
             marginLeft: 10,
@@ -81,7 +81,7 @@ function Referral() {
             justifyContent: "center",
           }}
         >
-          <Text style={{ fontWeight: "700", fontSize: 17 }}>
+          <Text style={{ fontWeight: "700", fontSize: width * 0.04 }}>
             View Membership Plans
           </Text>
         </TouchableOpacity>

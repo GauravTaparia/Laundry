@@ -18,7 +18,7 @@ function Skillindia() {
       style={{
         backgroundColor: "white",
         flexDirection: "row",
-        marginTop: 60,
+        marginTop: height * 0.23,
       }}
     >
       <Image
@@ -27,8 +27,8 @@ function Skillindia() {
         style={{
           width: width * 0.4,
           height: height * 0.8,
-          marginLeft: 2,
-          marginRight: 2,
+          marginLeft: width * 0.01,
+          marginRight: width * 0.01,
         }}
       />
       <View
@@ -43,7 +43,7 @@ function Skillindia() {
             fontWeight: "700",
             fontSize: 19,
             color: "white",
-            margin: 5,
+            margin: width * 0.01,
             justifyContent: "center",
             textAlign: "center",
           }}
@@ -54,11 +54,11 @@ function Skillindia() {
         <Text
           style={{
             fontWeight: "700",
-            fontSize: 14,
+            fontSize: width * 0.03,
             color: "#bdb8b8",
             justifyContent: "center",
-            marginLeft: 10,
-            marginRight: 10,
+            marginLeft: width * 0.01,
+            marginRight: width * 0.01,
             textAlign: "center",
           }}
         >
@@ -77,7 +77,7 @@ function Skillindia() {
             justifyContent: "center",
           }}
         >
-          <Text style={{ fontWeight: "700", fontSize: 17 }}>
+          <Text style={{ fontWeight: "700", fontSize: width * 0.04 }}>
             Book Your Pickup Now
           </Text>
         </TouchableOpacity>

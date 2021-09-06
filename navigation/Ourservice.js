@@ -74,7 +74,7 @@ function Ourservice() {
             style={{
               textAlign: "left",
               color: "white",
-              fontSize: 18,
+              fontSize: width * 0.045,
               fontWeight: "700",
               padding: 10,
             }}
@@ -85,7 +85,7 @@ function Ourservice() {
             style={{
               textAlign: "left",
               color: "#BDB8B8",
-              fontSize: 15,
+              fontSize: width * 0.026,
               fontWeight: "700",
               paddingLeft: 10,
             }}
@@ -151,7 +151,7 @@ function Ourservice() {
             style={{
               textAlign: "left",
               color: "white",
-              fontSize: 18,
+              fontSize: width * 0.045,
               fontWeight: "700",
               padding: 10,
             }}
@@ -162,7 +162,7 @@ function Ourservice() {
             style={{
               textAlign: "left",
               color: "#BDB8B8",
-              fontSize: 15,
+              fontSize: width * 0.026,
               fontWeight: "700",
               paddingLeft: 10,
             }}
@@ -228,7 +228,7 @@ function Ourservice() {
             style={{
               textAlign: "left",
               color: "white",
-              fontSize: 18,
+              fontSize: width * 0.045,
               fontWeight: "700",
               padding: 10,
             }}
@@ -239,7 +239,7 @@ function Ourservice() {
             style={{
               textAlign: "left",
               color: "#BDB8B8",
-              fontSize: 15,
+              fontSize: width * 0.026,
               fontWeight: "700",
               paddingLeft: 10,
             }}
