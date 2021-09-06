@@ -19,6 +19,7 @@ import ProfileScreenButton7 from '../navigation/ProfileScreenButton7'
 import ProfileScreenButton8 from '../navigation/ProfileScreenButton8'
 import ProfileScreenButton9 from '../navigation/ProfileScreenButton9'
 import ProfileScreenButton10 from '../navigation/ProfileScreenButton10'
+import ProfileScreenButton11 from '../navigation/ProfileScreenButton11'
 
 const { width } = Dimensions.get('window')
 const height = width * 0.58
@@ -69,7 +70,34 @@ function ProfileScreenAfterLogin({ navigation }) {
         <ProfileScreenButton8 />
         <ProfileScreenButton9 />
         <ProfileScreenButton10 />
-        <View style={{ backgroundColor: 'white' }} />
+        <ProfileScreenButton11 />
+        <View
+          style={{ backgroundColor: '#fff', marginTop: 10, marginBottom: 10 }}
+        >
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Tabs')}
+            style={{
+              width: width * 0.5,
+              borderRadius: 20,
+              backgroundColor: '#e32f45',
+              marginLeft: width * 0.25,
+              marginRight: width * 0.25,
+              alignItems: 'center',
+            }}
+          >
+            <Text
+              style={{
+                fontSize: width * 0.042,
+                fontWeight: 'bold',
+                color: 'white',
+                padding: 10,
+                textTransform: 'uppercase',
+              }}
+            >
+              Logout
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   )

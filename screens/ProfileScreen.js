@@ -27,7 +27,7 @@ function ProfileScreen() {
             style={{
               textAlign: 'center',
               color: 'black',
-              fontSize: 27,
+              fontSize: width * 0.06,
               fontWeight: '700',
               marginTop: 10,
               marginBottom: 10,
@@ -55,8 +55,8 @@ function ProfileScreen() {
             source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/enterprise.png')}
             resizeMode='cover'
             style={{
-              height: height * 0.8,
-              width: width * 0.4,
+              height: height * 0.9,
+              width: width * 0.525,
               marginLeft: 5,
               marginBottom: 5,
               marginTop: 5,
