@@ -61,7 +61,7 @@ export default function ProfileScreenButton3() {
             padding: 10,
           }}
         >
-          Join Our Service Force
+          Share Our Service
         </Text>
       </View>
       <TouchableOpacity
