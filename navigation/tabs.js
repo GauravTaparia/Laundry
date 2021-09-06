@@ -1,10 +1,10 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../screens/HomeScreen.js";
-import OrderScreen from "../screens/OrderScreen.js";
-import ProfileScreen from "../screens/ProfileScreen.js";
-import RewardScreen from "../screens/RewardScreen.js";
-import RecentOrderScreen from "../screens/RecentOrderScreen.js";
-import React from "react";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import HomeScreen from '../screens/HomeScreen.js'
+import OrderScreen from '../screens/OrderScreen.js'
+import ProfileScreen from '../screens/ProfileScreen.js'
+import RewardScreen from '../screens/RewardScreen.js'
+import RecentOrderScreen from '../screens/RecentOrderScreen.js'
+import React from 'react'
 import {
   StyleSheet,
   Text,
@@ -12,18 +12,18 @@ import {
   Image,
   TouchableOpacity,
   Button,
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+} from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
 
 const CustomTabBarButton = ({ children, onPress }) => (
   <TouchableOpacity
     onPress={onPress}
     style={{
       top: -15,
-      justifyContent: "center",
-      alignItems: "center",
+      justifyContent: 'center',
+      alignItems: 'center',
       ...style.shadow,
     }}
   >
@@ -32,15 +32,15 @@ const CustomTabBarButton = ({ children, onPress }) => (
         width: 70,
         height: 70,
         borderRadius: 35,
-        backgroundColor: "#e32f45",
+        backgroundColor: '#e32f45',
       }}
     >
       {children}
     </View>
   </TouchableOpacity>
-);
+)
 
-const Tabs = () => {
+const Tabs = ({ navigation }) => {
   return (
     <Tab.Navigator
       screenOptions={{
@@ -48,12 +48,12 @@ const Tabs = () => {
 
         tabBarStyle: [
           {
-            position: "absolute",
+            position: 'absolute',
             bottom: 25,
             left: 20,
             right: 20,
             elevation: 0,
-            backgroundColor: "#fff",
+            backgroundColor: '#fff',
             borderRadius: 15,
             height: 70,
             ...style.shadow,
@@ -63,24 +63,24 @@ const Tabs = () => {
       }}
     >
       <Tab.Screen
-        name="Home"
+        name='Home'
         component={HomeScreen}
         options={{
           tabBarIcon: ({ focused }) => (
             <View
               style={{
                 top: 10,
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
               <Image
-                source={require("/Users/gauravtaparia/Desktop/Laundry/assets/home.png")}
-                resizeMode="contain"
+                source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/home.png')}
+                resizeMode='contain'
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? "#e32f45" : "#748c94",
+                  tintColor: focused ? '#e32f45' : '#748c94',
                 }}
               ></Image>
               <Text
@@ -95,24 +95,24 @@ const Tabs = () => {
         }}
       ></Tab.Screen>
       <Tab.Screen
-        name="PastOrder"
+        name='PastOrder'
         component={RecentOrderScreen}
         options={{
           tabBarIcon: ({ focused }) => (
             <View
               style={{
                 top: 10,
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
               <Image
-                source={require("/Users/gauravtaparia/Desktop/Laundry/assets/PastOrder.png")}
-                resizeMode="contain"
+                source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/PastOrder.png')}
+                resizeMode='contain'
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? "#e32f45" : "#748c94",
+                  tintColor: focused ? '#e32f45' : '#748c94',
                 }}
               ></Image>
               <Text
@@ -127,17 +127,17 @@ const Tabs = () => {
         }}
       ></Tab.Screen>
       <Tab.Screen
-        name="Order"
+        name='Order'
         component={OrderScreen}
         options={{
           tabBarIcon: ({ focused }) => (
             <Image
-              source={require("/Users/gauravtaparia/Desktop/Laundry/assets/NewOrder.png")}
-              resizeMode="contain"
+              source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/NewOrder.png')}
+              resizeMode='contain'
               style={{
                 width: 30,
                 height: 30,
-                tintColor: "#fff",
+                tintColor: '#fff',
               }}
             />
           ),
@@ -145,24 +145,24 @@ const Tabs = () => {
         }}
       ></Tab.Screen>
       <Tab.Screen
-        name="Reward"
+        name='Reward'
         component={RewardScreen}
         options={{
           tabBarIcon: ({ focused }) => (
             <View
               style={{
                 top: 10,
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
               <Image
-                source={require("/Users/gauravtaparia/Desktop/Laundry/assets/Rewards.png")}
-                resizeMode="contain"
+                source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/Rewards.png')}
+                resizeMode='contain'
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? "#e32f45" : "#748c94",
+                  tintColor: focused ? '#e32f45' : '#748c94',
                 }}
               ></Image>
               <Text
@@ -177,29 +177,30 @@ const Tabs = () => {
         }}
       ></Tab.Screen>
       <Tab.Screen
-        name="Profile"
+        name='Profile'
         component={ProfileScreen}
         options={{
           headerRight: () => (
             <TouchableOpacity
+              onPress={() => navigation.navigate('ProfileScreenAfterLogin')}
               style={{
                 borderRadius: 15,
                 height: 30,
                 width: 70,
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundColor: "#e32f45",
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#e32f45',
                 marginRight: 15,
               }}
             >
               <Text
                 style={{
-                  fontWeight: "bold",
-                  color: "white",
+                  fontWeight: 'bold',
+                  color: 'white',
                   fontSize: 15,
                   marginLeft: 10,
                   marginRight: 10,
-                  textTransform: "uppercase",
+                  textTransform: 'uppercase',
                 }}
               >
                 Login
@@ -210,17 +211,17 @@ const Tabs = () => {
             <View
               style={{
                 top: 10,
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
               <Image
-                source={require("/Users/gauravtaparia/Desktop/Laundry/assets/Profile.png")}
-                resizeMode="contain"
+                source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/Profile.png')}
+                resizeMode='contain'
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? "#e32f45" : "#748c94",
+                  tintColor: focused ? '#e32f45' : '#748c94',
                 }}
               ></Image>
               <Text
@@ -235,12 +236,12 @@ const Tabs = () => {
         }}
       ></Tab.Screen>
     </Tab.Navigator>
-  );
-};
+  )
+}
 
 const style = StyleSheet.create({
   shadow: {
-    shadowColor: "#7F5DF0",
+    shadowColor: '#7F5DF0',
     shadowOffset: {
       width: 0,
       height: 10,
@@ -249,6 +250,6 @@ const style = StyleSheet.create({
     shadowRadius: 3.5,
     elevation: 5,
   },
-});
+})
 
-export default Tabs;
+export default Tabs

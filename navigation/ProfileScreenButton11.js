@@ -39,7 +39,7 @@ export default function ProfileScreenButton10({ navigation }) {
       >
         <Image
           resizeMode='contain'
-          source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/information.png')}
+          source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/terms-and-conditions.png')}
           style={{ width: width * 0.3, height: height * 0.2 }}
         />
       </View>
@@ -62,7 +62,7 @@ export default function ProfileScreenButton10({ navigation }) {
             padding: 10,
           }}
         >
-          About Us
+          Terms & Condition
         </Text>
       </View>
       <TouchableOpacity
