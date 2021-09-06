@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Button,
   StyleSheet,
@@ -8,40 +8,40 @@ import {
   TouchableOpacity,
   Dimensions,
   ScrollView,
-} from 'react-native'
-import ProfileScreenButton1 from '../navigation/ProfileScreenButton1'
-import ProfileScreenButton2 from '../navigation/ProfileScreenButton2'
-import ProfileScreenButton3 from '../navigation/ProfileScreenButton3'
-import ProfileScreenButton4 from '../navigation/ProfileScreenButton4'
-import ProfileScreenButton5 from '../navigation/ProfileScreenButton5'
-import ProfileScreenButton6 from '../navigation/ProfileScreenButton6'
-import ProfileScreenButton7 from '../navigation/ProfileScreenButton7'
-import ProfileScreenButton8 from '../navigation/ProfileScreenButton8'
-import ProfileScreenButton9 from '../navigation/ProfileScreenButton9'
-import ProfileScreenButton10 from '../navigation/ProfileScreenButton10'
-import ProfileScreenButton11 from '../navigation/ProfileScreenButton11'
+} from "react-native";
+import ProfileScreenButton1 from "../navigation/ProfileScreenButton1";
+import ProfileScreenButton2 from "../navigation/ProfileScreenButton2";
+import ProfileScreenButton3 from "../navigation/ProfileScreenButton3";
+import ProfileScreenButton4 from "../navigation/ProfileScreenButton4";
+import ProfileScreenButton5 from "../navigation/ProfileScreenButton5";
+import ProfileScreenButton6 from "../navigation/ProfileScreenButton6";
+import ProfileScreenButton7 from "../navigation/ProfileScreenButton7";
+import ProfileScreenButton8 from "../navigation/ProfileScreenButton8";
+import ProfileScreenButton9 from "../navigation/ProfileScreenButton9";
+import ProfileScreenButton10 from "../navigation/ProfileScreenButton10";
+import ProfileScreenButton11 from "../navigation/ProfileScreenButton11";
 
-const { width } = Dimensions.get('window')
-const height = width * 0.58
+const { width } = Dimensions.get("window");
+const height = width * 0.58;
 function ProfileScreenAfterLogin({ navigation }) {
   return (
     <ScrollView>
       <View>
         <View
           style={{
-            backgroundColor: 'white',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
+            backgroundColor: "white",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
             marginTop: 10,
           }}
         >
           <Text
             style={{
-              textAlign: 'center',
-              color: 'black',
+              textAlign: "center",
+              color: "black",
               fontSize: width * 0.05,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               marginTop: 10,
               marginBottom: 5,
             }}
@@ -50,10 +50,10 @@ function ProfileScreenAfterLogin({ navigation }) {
           </Text>
           <Text
             style={{
-              textAlign: 'center',
-              color: 'black',
+              textAlign: "center",
+              color: "black",
               fontSize: width * 0.05,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               marginBottom: 10,
             }}
           >
@@ -69,29 +69,29 @@ function ProfileScreenAfterLogin({ navigation }) {
         <ProfileScreenButton7 />
         <ProfileScreenButton8 />
         <ProfileScreenButton9 />
-        <ProfileScreenButton10 />
+        <ProfileScreenButton10 navigation={navigation} />
         <ProfileScreenButton11 />
         <View
-          style={{ backgroundColor: '#fff', marginTop: 10, marginBottom: 10 }}
+          style={{ backgroundColor: "#fff", marginTop: 10, marginBottom: 10 }}
         >
           <TouchableOpacity
-            onPress={() => navigation.navigate('Tabs')}
+            onPress={() => navigation.navigate("Tabs")}
             style={{
               width: width * 0.5,
               borderRadius: 20,
-              backgroundColor: '#e32f45',
+              backgroundColor: "#e32f45",
               marginLeft: width * 0.25,
               marginRight: width * 0.25,
-              alignItems: 'center',
+              alignItems: "center",
             }}
           >
             <Text
               style={{
                 fontSize: width * 0.042,
-                fontWeight: 'bold',
-                color: 'white',
+                fontWeight: "bold",
+                color: "white",
                 padding: 10,
-                textTransform: 'uppercase',
+                textTransform: "uppercase",
               }}
             >
               Logout
@@ -100,7 +100,7 @@ function ProfileScreenAfterLogin({ navigation }) {
         </View>
       </View>
     </ScrollView>
-  )
+  );
 }
 
-export default ProfileScreenAfterLogin
+export default ProfileScreenAfterLogin;

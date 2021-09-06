@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Button,
   StyleSheet,
@@ -8,30 +8,30 @@ import {
   TouchableOpacity,
   Dimensions,
   ScrollView,
-} from 'react-native'
+} from "react-native";
 
-const { width } = Dimensions.get('window')
-const height = width * 0.58
+const { width } = Dimensions.get("window");
+const height = width * 0.58;
 function AboutUsScreen({ navigation }) {
   return (
     <ScrollView>
       <View>
         <View
           style={{
-            backgroundColor: 'white',
-            flexDirection: 'column',
+            backgroundColor: "white",
+            flexDirection: "column",
             marginBottom: 10,
-            alignItems: 'center',
-            justifyContent: 'center',
+            alignItems: "center",
+            justifyContent: "center",
             marginTop: 10,
           }}
         >
           <Text
             style={{
-              textAlign: 'center',
-              color: 'black',
+              textAlign: "center",
+              color: "black",
               fontSize: width * 0.06,
-              fontWeight: '700',
+              fontWeight: "700",
               marginTop: 10,
               marginBottom: 10,
             }}
@@ -40,13 +40,13 @@ function AboutUsScreen({ navigation }) {
           </Text>
           <Text
             style={{
-              color: '#bdb8b8',
+              color: "#bdb8b8",
               fontSize: width * 0.05,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               marginBottom: 10,
               marginLeft: width * 0.01,
               marginRight: width * 0.01,
-              textAlign: 'justify',
+              textAlign: "justify",
             }}
           >
             Our company strives to provide our users with excellent laundry
@@ -55,8 +55,8 @@ function AboutUsScreen({ navigation }) {
             expensive clothes.
           </Text>
           <Image
-            source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/enterprise.png')}
-            resizeMode='cover'
+            source={require("/Users/gauravtaparia/Desktop/Laundry/assets/enterprise.png")}
+            resizeMode="cover"
             style={{
               height: height * 0.9,
               width: width * 0.525,
@@ -66,23 +66,23 @@ function AboutUsScreen({ navigation }) {
             }}
           />
         </View>
-        <View style={{ backgroundColor: '#fff' }}>
+        <View style={{ backgroundColor: "#fff" }}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('ProfileScreenAfterLogin')}
+            onPress={() => navigation.navigate("ProfileScreenAfterLogin")}
             style={{
               width: width * 0.5,
               borderRadius: 20,
-              backgroundColor: '#e32f45',
+              backgroundColor: "#e32f45",
               marginLeft: width * 0.25,
               marginRight: width * 0.25,
-              alignItems: 'center',
+              alignItems: "center",
             }}
           >
             <Text
               style={{
                 fontSize: width * 0.042,
-                fontWeight: 'bold',
-                color: 'white',
+                fontWeight: "bold",
+                color: "white",
                 padding: 10,
               }}
             >
@@ -92,7 +92,7 @@ function AboutUsScreen({ navigation }) {
         </View>
       </View>
     </ScrollView>
-  )
+  );
 }
 
-export default AboutUsScreen
+export default AboutUsScreen;
