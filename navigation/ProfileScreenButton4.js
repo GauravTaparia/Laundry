@@ -11,7 +11,7 @@ import {
 
 const { width } = Dimensions.get('window')
 const height = width * 0.58
-export default function ProfileScreenButton2() {
+export default function ProfileScreenButton4() {
   return (
     <View
       style={{
@@ -39,7 +39,7 @@ export default function ProfileScreenButton2() {
       >
         <Image
           resizeMode='contain'
-          source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/complaint.png')}
+          source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/referral.png')}
           style={{ width: width * 0.3, height: height * 0.2 }}
         />
       </View>
@@ -62,7 +62,7 @@ export default function ProfileScreenButton2() {
             padding: 10,
           }}
         >
-          Rate us on the AppStore
+          Refer & Earn
         </Text>
       </View>
       <TouchableOpacity

@@ -17,6 +17,7 @@ export default function ProfileScreenButton3() {
       style={{
         paddingLeft: 0,
         paddingBottom: 10,
+        paddingTop: 10,
         paddingRight: 10,
         marginTop: 10,
         backgroundColor: 'white',
@@ -33,20 +34,20 @@ export default function ProfileScreenButton3() {
           paddingBottom: 10,
           borderBottomLeftRadius: 60,
           borderTopLeftRadius: 60,
-          height: height * 0.4,
+          height: height * 0.3,
         }}
       >
         <Image
           resizeMode='contain'
           source={require('/Users/patel/OneDrive/Desktop/Laundry-master/assets/share.png')}
-          style={{ width: width * 0.3, height: height * 0.3 }}
+          style={{ width: width * 0.3, height: height * 0.2 }}
         />
       </View>
       <View
         style={{
           backgroundColor: '#2E2B36',
           width: width * 0.5,
-          height: height * 0.4,
+          height: height * 0.3,
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
@@ -54,9 +55,9 @@ export default function ProfileScreenButton3() {
       >
         <Text
           style={{
-            textAlign: 'left',
+            textAlign: 'center',
             color: 'white',
-            fontSize: 20,
+            fontSize: width * 0.05,
             fontWeight: '700',
             padding: 10,
           }}
@@ -68,7 +69,7 @@ export default function ProfileScreenButton3() {
         style={{
           backgroundColor: '#2E2B36',
           width: width * 0.2,
-          height: height * 0.4,
+          height: height * 0.3,
           borderBottomRightRadius: 60,
           borderTopRightRadius: 60,
           alignItems: 'center',
