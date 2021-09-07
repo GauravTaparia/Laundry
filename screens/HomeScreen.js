@@ -30,7 +30,7 @@ function HomeScreen({ navigation }) {
   return (
     <ScrollView>
       {/* SearchBar */}
-      <View stle={{ flex: 1 }}>
+      <View style={{ flex: 1 }}>
         <View
           style={{
             height: 80,
