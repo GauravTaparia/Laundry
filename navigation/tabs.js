@@ -5,6 +5,7 @@ import ProfileScreen from "../screens/ProfileScreen.js";
 import RewardScreen from "../screens/RewardScreen.js";
 import RecentOrderScreen from "../screens/RecentOrderScreen.js";
 import React from "react";
+
 import {
   StyleSheet,
   Text,
@@ -12,9 +13,11 @@ import {
   Image,
   TouchableOpacity,
   Button,
+  Dimensions,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-
+const { width } = Dimensions.get("window");
+const height = width * 0.58;
 const Tab = createBottomTabNavigator();
 
 const CustomTabBarButton = ({ children, onPress }) => (
@@ -32,7 +35,7 @@ const CustomTabBarButton = ({ children, onPress }) => (
         width: 70,
         height: 70,
         borderRadius: 35,
-        backgroundColor: "#e32f45",
+        backgroundColor: "#2E2B36",
       }}
     >
       {children}
@@ -56,6 +59,7 @@ const Tabs = ({ navigation }) => {
             backgroundColor: "#fff",
             borderRadius: 15,
             height: 70,
+
             ...style.shadow,
           },
           null,
@@ -66,6 +70,9 @@ const Tabs = ({ navigation }) => {
         name="Home"
         component={HomeScreen}
         options={{
+          headerStyle: { ...style.headerStyle },
+          headerShown: true,
+          headerTitle: "",
           tabBarIcon: ({ focused }) => (
             <View
               style={{
@@ -80,7 +87,7 @@ const Tabs = ({ navigation }) => {
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? "#e32f45" : "#748c94",
+                  tintColor: focused ? "#2E2B36" : "#748c94",
                 }}
               ></Image>
               <Text
@@ -249,6 +256,10 @@ const style = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.5,
     elevation: 5,
+  },
+  headerStyle: {
+    height: height * 0.14,
+    backgroundColor: "#2E2B36",
   },
 });
 
